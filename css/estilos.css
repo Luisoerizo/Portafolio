@@ -1,0 +1,332 @@
+:root{
+    --var-color-blanco: #ffffff;
+    --var-color-azul:  #2d94fc;
+    --var-color-negro:  #222222;
+     --var-color-azul-oscuro: #272643;
+   --var-color-azul-secundario:#214151;
+   --var-color-gris:#D3D3D3;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   }
+
+   body{
+    font-size: 16px;
+   }
+   p{
+    letter-spacing: .9px;
+       line-height: 26px;
+   }
+   h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+   }
+
+   a{
+       text-decoration: none;
+   }
+
+   a:hover{
+       text-decoration: none;
+   }
+
+/* ===============================
+======== Header y Navbar =========
+================================== */
+   header{
+       width: 100%;
+       position: fixed;
+       z-index: 10;
+   }
+
+   .navbar{
+       background-color: rgba(0, 0, 0, 0.5);
+   }
+    .navbar-brand {
+        color: var(--var-color-blanco) !important;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    nav .container {
+        border-bottom: 1px solid rgba(107, 106, 106, 0.6);
+        padding-bottom: 10px;
+    }
+    .shrink .container {
+        border: none !important;
+    }
+    ul.navbar-nav li a.nav-link {
+        color: var(--var-color-blanco) !important;
+    }
+    ul.navbar-nav li a.nav-link:hover{
+     color:var(--var-color-azul) !important;
+    }
+    ul.navbar-nav li.active a.nav-link {
+        color: var(--var-color-azul) !important;
+        transition: all.3s;
+    }
+    .shrink{
+     background: var(--var-color-blanco)!important;
+     box-shadow: 1px 2px 4px 0px var(--var-color-negro) !important;
+    }
+    .shrink .navbar-brand {
+        color: var(--var-color-azul) !important;
+    }
+    .shrink ul.navbar-nav li a.nav-link {
+        color: var(--var-color-negro) !important;
+    }
+    .shrink ul.navbar-nav li a.nav-link:hover, .shrink ul.navbar-nav li.active a.nav-link  {
+        color:var(--var-color-azul)​ !important;
+    }
+
+/* ===============================
+============ Banner ==============
+================================== */
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/images/devs.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 180px 0px;
+}
+
+.banner_desc h1.title {
+    color: var(--var-color-blanco);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.banner_desc p.desc {
+    color: var(--var-color-blanco);
+    margin: 30px 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+ a.btn {
+    padding: 12px 30px;
+    background: var(--var-color-azul);
+    color: var(--var-color-blanco);
+    border-radius: 25px;
+    border: 1px solid transparent;
+    margin-right: 20px;
+    transition: all .4s;
+    box-shadow: 1px 2px 4px 0px var(--var-color-negro);
+}
+
+.btn-color{
+ background: var(--var-color-azul-oscuro) !important;
+    
+}
+.btn-color:hover {
+    transform: scale(1.05);
+    transition: .3s;
+    color: var(--var-color-blanco) !important;
+    font-weight: bold;
+}
+.btn-trans{ 
+ background: var(--var-color-blanco) !important;
+ color: var(--var-color-negro) !important;
+ border: 1px solid var(--var-color-blanco) ​ !important;
+}
+
+.btn-trans:hover{
+    transform: scale(1.05);
+    transition: .3s;
+    color: var(--var-color-negro) !important;
+    transition: all .3s cubic-bezier(0.65, 0.05, 0.51, 0.67);
+    border: 1px solid transparent !important;
+    font-weight: bold;
+}
+
+i{
+    font-size: 1em;
+    color: var(--var-color-blanco);
+}
+
+/*================================
+=========== Acercade  ============
+================================== */
+.card-body{
+    padding: 0;
+}
+.acerca{
+    padding: 3em 0;
+  
+}
+
+
+.img-cuerpo{
+    width: 50%; 
+    height: auto;
+    border-radius: 40%;
+}
+
+.pasatiempos{
+    list-style: none;
+}
+
+.container-gray{
+    clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+    background-color: lightgray;
+
+}
+.conocimientos{
+    padding: 2em 0;
+}
+
+.img-thumbnail{
+    background-color: transparent !important;
+}
+
+.img-conocimientos{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.card{
+    background: transparent !important;
+}
+/*================================
+========= Herramientas  ==========
+================================== */
+.container-white{
+ /*    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%); Con borde bajo recto */
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%); /* Con borde bajo hacia adentro  */
+    background-color: transparent;
+}
+
+.img-herramientas{
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 1em;
+}
+
+/*================================
+========== Contáctame  ===========
+================================== */
+.contacto{
+    margin: 2em 0;
+}
+.contact-form{
+     margin-top:15px;
+}
+.contact-form .textarea{
+     min-height:220px; resize:none;
+}
+.form-control{
+     box-shadow:none;
+      border-color:#eee; height:49px;
+}
+.form-control:focus{
+     box-shadow:none;
+      border-color:#00b09c;
+}
+.form-control-feedback{
+     line-height:50px;
+}
+
+.form-control-feedback {
+line-height: 50px;
+top: 0px;
+}
+
+
+/* ===============================
+============= Footer =============
+================================== */
+
+.context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:hover {
+text-decoration: none;
+text-transform: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+========= Media Querys ===========
+================================== */
+
+@media(max-width:991px){
+
+ h1.title {
+     font-size: 30px !important;
+     letter-spacing: 2px;
+ }
+ a.btn {
+     margin-right: 10px;
+     padding: 6px 20px;
+ }
+ .bg-light {
+      background-color: transparent !important;
+ }
+ .shrink{
+  background: var(--var-color-blanco) !important;
+ }
+ .banner{
+  padding: 150px 0px;
+  background-position: top center;
+ }
+ .banner-desc {
+     padding: 78px 0px;
+ }
+
+} 
+
