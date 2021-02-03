@@ -172,10 +172,10 @@ i{
 .container-gray{
     clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
     background-color: lightgray;
-
+    padding: 6em 0;
 }
 .conocimientos{
-    padding: 2em 0;
+    padding: 6em 0;
 }
 
 .img-thumbnail{
@@ -197,6 +197,7 @@ i{
  /*    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%); Con borde bajo recto */
     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%); /* Con borde bajo hacia adentro  */
     background-color: transparent;
+    padding: 6em 0;
 }
 
 .img-herramientas{
